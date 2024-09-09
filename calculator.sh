@@ -15,20 +15,20 @@ echo " 4 for division"
 read operation
 
 #initialising operations
-c= $(($a + $b))
-d= $(($a - $b))
-e= $(($a * $b))
-f= $(($a / $b))
+c=$(($a + $b))
+d=$(($a - $b))
+e=$(($a * $b))
+f=$(($a / $b))
 
 #switch case for result
 case $operation in
-1)result= "$a + $b =$c "
+1)result="$a + $b =$c "
 ;;
-2)result= "$a - $b =$d "
+2)result="$a - $b =$d "
 ;;
-3)result= "$a * $b =$e "
+3)result="$a * $b =$e "
 ;;
-4)result= "$a / $b =$f "
+4)result="$a / $b =$f "
 ;;
 esac
 echo "your answer is : $result"
